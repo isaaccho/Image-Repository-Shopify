@@ -5,7 +5,7 @@ This is my submission for the summer 2021 Shopify BackEnd Developer Position :)
 First, git clone this repository into your local desktop.
 
 Second, open your terminal, cd into the directory of this folder and copy and paste these commands into the terminal:
-`npm install -g yarn`, `pip install Flask` or `pip3 install Flask`.
+`pip install Flask` or `pip3 install Flask`.
 
 Third, copy and paste these commands into the terminal:
   1. `cd flask-backend`
