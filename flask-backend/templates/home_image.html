@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Popular Shoe Releases of 2020</h1>
+
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+      <input type="file" name="pic" />
+      <input type="submit" value="Upload" />
+    </form>
+
+    <table border="1">
+      <thead>
+        <td>Name</td>
+        <td>Image of the shoe</td>
+        <td>Marketprice</td>
+        <td></td>
+      </thead>
+
+      {% for shoe in shoeholder %}
+      <tr>
+        <td>{{ shoe["name"] }}</td>
+        <td>
+          <img src="{{ url_for('static', filename = shoe['imgpath']) }}" />
+        </td>
+        <td>{{ shoe["marketprice"] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <h1 style="text-align:right">Your Favourite shoes of 2020!</h1>
+    <li>example</li>
+  </body>
+</html>
